@@ -34,6 +34,6 @@ class Hero extends Model
     }
 
     public function kind(){
-        return $this->hasOne(Kind::class);
+        return $this->belongsTo(Kind::class);
     }
 }
