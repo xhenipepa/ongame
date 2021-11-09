@@ -2,11 +2,9 @@
 <footer class="footer">
     <div class="container footer--flex">
         <div class="footer-start">
-            <p>2021 © GONLINE - <a href="https://gonlinepro.com/" target="_blank"
-                                   rel="noopener noreferrer">gonlinepro.com</a></p>
+            <p>2021 ©
+                <a href="https://www.linkedin.com/in/xhenildapepa/" target="_blank" rel="noopener noreferrer">Xhenilda Pepa</a>
+            </p>
         </div>
-        <ul class="footer-end">
-            <li><a href="/about">About</a></li>
-        </ul>
     </div>
 </footer>
