@@ -34,13 +34,13 @@
             <form id="registerForm" method="post">
                 <div class="form-group">
                     @csrf
-                    <label for="firstName">First Name</label>
-                    <input type="text" class="form-control" name="firstName"/>
+                    <label for="first_name">First Name</label>
+                    <input type="text" class="form-control" name="first_name"/>
                     <span class="error"></span>
                 </div>
                 <div class="form-group">
-                    <label for="lastName">Last Name</label>
-                    <input type="text" class="form-control" name="lastName"/>
+                    <label for="last_name">Last Name</label>
+                    <input type="text" class="form-control" name="last_name"/>
                     <span class="error"></span>
                 </div>
                 <div class="form-group">
@@ -63,7 +63,8 @@
         </div>
     </div>
     <div class="pull-right">
-        <a class="btn btn-primary" href="{{ route('login') }}"> Back </a>
+        <span> Already registered?</span>
+        <a class="btn btn-primary" href="{{ route('login') }}">Login</a>
     </div>
 @endsection
 

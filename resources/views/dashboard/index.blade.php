@@ -101,7 +101,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6">
+                    <div class="col-lg-9">
                         <div class="sort-bar media-bar">
                             <div class="sort-bar-start">
                                 <div class="search-wrapper">

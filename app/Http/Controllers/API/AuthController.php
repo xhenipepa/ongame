@@ -4,6 +4,7 @@ namespace App\Http\Controllers\API;
 
 use App\Http\Controllers\Controller;
 use App\Http\Requests\LoginRequest;
+use App\Http\Requests\RegisterRequest;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Notifications\Notifiable;
@@ -19,7 +20,7 @@ class AuthController extends Controller
         $this->middleware('auth:api', ['except' => ['login', 'register']]);
     }
 
-    public function register(Request $request)
+    public function register(RegisterRequest $request)
     {
         $user = User::create([
             'first_name' => $request->input('first_name'),
