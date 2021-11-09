@@ -16,9 +16,9 @@
 
     <div class="card push-top">
         <div class="card-body">
-                <div class="alert alert-danger error">
-                    <p class="alert__main"></p>
-                </div>
+            <div class="alert alert-danger error">
+                <p class="alert__main"></p>
+            </div>
             <br/>
 
             <form id="loginForm">
