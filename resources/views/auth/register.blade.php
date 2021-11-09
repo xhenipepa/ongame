@@ -73,14 +73,14 @@
         isTokenPresent();
 
         $(document).ready(function () {
-            $("#loginForm").submit(function (event) {
+            $("#registerForm").submit(function (event) {
                 event.preventDefault();
 
 
 
                 $.ajax({
                     type: "POST",
-                    url: base_api_url + "/login",
+                    url: base_api_url + "/register",
                     beforeSend: function(request) {
                         request.setRequestHeader("Accept", 'application/json');
                         request.setRequestHeader("'Content-Type'", 'application/json');
@@ -93,7 +93,7 @@
                     encode: true,
                     success: function (data) {
                         console.log(data);
-                        alert('You have been successfully logged in!');
+                        alert('You have been successfully registered!');
                         sessionStorage.setItem('token', data.access_token);
                         window.location = `${base_url}/dashboard`
                     },
